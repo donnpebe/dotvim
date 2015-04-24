@@ -1,0 +1,54 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/abbott"]
+	path = bundle/abbott
+	url = git@github.com:vim-scripts/abbott.vim.git
+[submodule "bundle/go"]
+	path = bundle/go
+	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/jsx"]
+	path = bundle/jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule "bundle/emmet"]
+	path = bundle/emmet
+	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/nerdtree-tabs"]
+	path = bundle/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = git@github.com:Shougo/neocomplcache.vim.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/rails"]
+	path = bundle/rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/bundler"]
+	path = bundle/bundler
+	url = git://github.com/tpope/vim-bundler.git
+[submodule "bundle/ruby"]
+	path = bundle/ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = git@github.com:vim-scripts/delimitMate.vim.git

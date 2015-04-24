@@ -1,7 +1,8 @@
 Installation:
 
-	git clone git://github.com/donnpebe/dotvim.git ~/.vim
+    git clone git://github.com/donnpebe/dotvim.git ~/.vim
+    cd ~/.vim && git submodule init && git submodule update
 
 Create symlinks:
 
-	ln -s ~/dotfiles/vimrc ~/.vimrc
+    ln -s ~/dotfiles/vimrc ~/.vimrc
