@@ -38,6 +38,18 @@ runtime macros/matchit.vim
 
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
+" Change leader key
+nnoremap <space> <Nop>
+let mapleader = " "
+
+" remap NERDTree split navigation
+nnoremap <leader>h <C-w>h
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+" stop highlighting serach result
+nnoremap <leader><space> :noh<cr>
 
 "folding settings
 set foldmethod=indent   "fold based on indent
@@ -107,6 +119,7 @@ set nowritebackup
 set diffopt+=vertical 
 set wildignore+=node_modules/**,.git/**,bower_components/**,dist/**
 nmap <silent> <c-n> :NERDTreeTabsToggle<CR>
+let g:NERDTreeChDirMode       = 2
 " Fast saving
 nmap <leader>w :w!<cr>
 " Set 7 lines to the cursor - when moving vertically using j/k
