@@ -4,6 +4,10 @@ execute pathogen#infect()
 set hidden
 set relativenumber
 syntax enable
+set encoding=utf-8
+set fileencodings=utf-8
+set t_Co=256               " enable 256-color mode.
+set term=screen-256color"
 
 set ruler                       " Show cursor position.
 
@@ -42,11 +46,18 @@ set linebreak   "wrap lines at convenient points
 nnoremap <space> <Nop>
 let mapleader = " "
 
+" NERDTree things
 " remap NERDTree split navigation
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
+" Toggle Nerdtree 
+nmap <silent> <c-n> :NERDTreeTabsToggle<CR>
+" Show the current file in Nerdtree"
+map <Leader>f :NERDTreeFind<CR> 
+
+let g:NERDTreeChDirMode       = 2
 
 " stop highlighting serach result
 nnoremap <leader><space> :noh<cr>
@@ -118,8 +129,6 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup
 set diffopt+=vertical 
 set wildignore+=node_modules/**,.git/**,bower_components/**,dist/**
-nmap <silent> <c-n> :NERDTreeTabsToggle<CR>
-let g:NERDTreeChDirMode       = 2
 " Fast saving
 nmap <leader>w :w!<cr>
 " Set 7 lines to the cursor - when moving vertically using j/k
@@ -184,7 +193,8 @@ if !exists('g:neocomplcache_force_omni_patterns')
 endif
 let g:neocomplcache_force_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
-colorscheme abbott
+set background=dark
+colorscheme gruvbox
 
 " The Silver Searcher
 if executable('ag')
