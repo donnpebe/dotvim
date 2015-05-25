@@ -131,6 +131,11 @@ set diffopt+=vertical
 set wildignore+=node_modules/**,.git/**,bower_components/**,dist/**
 " Fast saving
 nmap <leader>w :w!<cr>
+
+nmap <leader><S-Enter> O<Esc>
+nmap <leader><CR> o<Esc>
+" allow multiple paste without accesing "0 register
+xnoremap <leader>p "_dP"
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
